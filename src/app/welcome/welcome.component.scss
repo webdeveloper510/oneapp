@@ -1,0 +1,43 @@
+ion-content {
+    --ion-background-color: #000000;
+
+    .app-logo-text-row {
+
+        margin-bottom: -30px;
+        .welcome-div {
+            margin-bottom: -5px;
+            .welcome-text {
+                font-size: 40px;
+                
+            }
+        }
+        .app-logo-text {
+            font-size: 25px;
+        }
+
+        .size-of-font {
+            font-size: 27px;
+        }
+    }
+
+    .sapce{
+        margin-top: 25%;
+
+        .social-media-button {
+            
+            //--border-radius: 28px;
+            width: 64%;
+            height: 50px;
+
+            .social-media-text {
+                font-size: 14px;
+                margin-left: 10px;
+            }
+            
+        }
+    }
+
+    .manually-text {
+        color: #909397;
+    }
+}

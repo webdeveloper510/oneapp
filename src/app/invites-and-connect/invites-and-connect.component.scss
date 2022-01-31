@@ -1,0 +1,38 @@
+ion-content {
+   --ion-background-color: #000000;
+   
+   .search{
+   
+    ion-item {
+            border: 2px solid black;
+            border-radius: 5px;
+            height: 41px;
+            border-radius: 19px;
+            --ion-background-color:#ffffff;
+            ion-icon {
+                margin-left: 10px;
+                width: 20px;
+                margin-left: -1px;
+                margin-top: -10px;
+            }
+
+            ion-input {
+                margin-left: 10px !important;
+            }
+        }
+   }
+
+    .light-white {
+        color: #dbdbdb;
+    }
+
+    .list {
+        ion-avatar {
+            width: 60px;
+            height: 60px;
+        }
+        .sub-heading {
+            color: #616368;
+        }
+    }
+}

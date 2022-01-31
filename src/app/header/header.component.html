@@ -1,0 +1,134 @@
+<ion-header>
+  <ion-toolbar class="header-toolbar-background-color">
+
+    <ion-buttons slot="start" class="toolbar-icon-color">
+      <ion-menu-button size="large" class="my-menu-icon" autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <div class="ion-text-center app-header-title">
+      <ion-text color="danger" class="ion-text-capitalize">
+        <h1>{{ app_title }}</h1>
+      </ion-text>
+    </div>
+    
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-menu side="start" menuId="first" contentId="content1" type="overlay" swipe-gesture="true">
+  <ion-header>
+    <ion-toolbar class="header-toolbar-background-color">
+
+      <ion-buttons slot="start" class="wtoolbar-icon-color">
+        <ion-menu-toggle>
+          <ion-img [src]="arrow_back_img" class="ion-padding"></ion-img>
+        </ion-menu-toggle>
+      </ion-buttons>
+
+      <div class="ion-text-center app-side-menu-header-title">
+        <ion-text color="danger" class="ion-text-capitalize">
+          <h1>{{ app_title }}</h1>
+        </ion-text>
+      </div>
+
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+
+    <ion-row class="ion-margin profile-div">
+      <ion-col size="3">
+        <ion-avatar>
+          <ion-img [src]="avtar_profile"></ion-img>
+        </ion-avatar>
+      </ion-col>
+      <ion-col size="9" class="ion-margin-top">
+        <div>
+          <ion-text>Test Name</ion-text>
+        </div>
+        <div><u><ion-text>My Profile</ion-text></u></div>
+      </ion-col>
+    </ion-row>
+
+    <ion-list>
+      <ion-item (click)="closeMenu('')" class="ion-no-padding ion-margin-start">
+        <ion-label>
+          <ion-grid class="ion-no-padding">
+            <ion-row>
+              <ion-col size="2">
+                <ion-icon name="log-in" size="large" class="menu_icon"></ion-icon>
+              </ion-col>
+              <ion-col size="10">
+                <li class="submenu1-li-padding ">Menu 1 </li>
+              </ion-col>
+
+            </ion-row>
+          </ion-grid>
+        </ion-label>
+      </ion-item>
+      <ion-item (click)="closeMenu('')" class="ion-no-padding ion-margin-start">
+        <ion-label>
+          <ion-grid class="ion-no-padding">
+            <ion-row>
+              <ion-col size="2">
+                <ion-icon name="log-in" size="large" class="menu_icon"></ion-icon>
+              </ion-col>
+              <ion-col size="10">
+                <li class="submenu1-li-padding ">Menu 2 </li>
+              </ion-col>
+
+            </ion-row>
+          </ion-grid>
+        </ion-label>
+      </ion-item>
+      <ion-item (click)="closeMenu('')" class="ion-no-padding ion-margin-start">
+        <ion-label>
+          <ion-grid class="ion-no-padding">
+            <ion-row >
+              <ion-col size="2">
+                <ion-icon name="log-in" size="large" class="menu_icon"></ion-icon>
+              </ion-col>
+              <ion-col size="10">
+                <li class="submenu1-li-padding ">Menu 3 </li>
+              </ion-col>
+
+            </ion-row>
+          </ion-grid>
+        </ion-label>
+      </ion-item>
+      <ion-item (click)="closeMenu('')" class="ion-no-padding ion-margin-start">
+        <ion-label>
+          <ion-grid class="ion-no-padding">
+            <ion-row class="">
+              <ion-col size="2">
+                <ion-icon name="log-in" size="large" class="menu_icon "></ion-icon>
+              </ion-col>
+              <ion-col size="10">
+                <li class="submenu1-li-padding ">Menu 4 </li>
+              </ion-col>
+
+            </ion-row>
+          </ion-grid>
+        </ion-label>
+      </ion-item>
+
+      <ion-item (click)="closeMenu('/login')" class="ion-no-padding ion-margin-start">
+        <ion-label>
+          <ion-grid class="ion-no-padding">
+            <ion-row class="">
+              <ion-col size="2">
+                <ion-icon name="log-out" size="large" class="menu_icon "></ion-icon>
+              </ion-col>
+              <ion-col size="10">
+                <li class="submenu1-li-padding ">Login / Logout </li>
+              </ion-col>
+
+            </ion-row>
+          </ion-grid>
+        </ion-label>
+      </ion-item>
+      
+    </ion-list>
+  </ion-content>
+ 
+</ion-menu>
+<div id="content1"></div>

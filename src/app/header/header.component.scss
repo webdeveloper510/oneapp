@@ -1,0 +1,97 @@
+.my-menu-icon {
+    font-size: 40px;
+}
+
+.app-header-title {
+    margin-top: 40px;
+    margin-right: 10%;
+}
+.header-toolbar-background-color {
+    --background: #000000;
+} 
+
+.toolbar-icon-color {
+    color: white;
+  }
+ 
+  .down-arrow {
+      width: 60% !important;
+      height: 20% !important;
+      float: right;
+  }
+
+  .my-menu-icon {
+    font-size: 40px;
+}
+
+.app-header-title {
+    margin-top: 40px;
+}
+.app-side-menu-header-title {
+    margin-top: 40px !important;
+    margin-right: 21% !important;
+}
+
+
+.toolbar-icon-color {
+    color: white;
+  }
+
+  .down-arrow {
+      width: 60% !important;
+      height: 20% !important;
+      float: right;
+  }
+  .level1, .level2, .level3 {
+    padding: 0;
+    margin: 8px 0;
+    list-style: none;
+    li {
+        border-top: solid 1px #eee;
+        padding: 8px 0 10px 8px;
+    }
+}
+.my-product {
+    width: 30px;
+}
+.my-ads {
+    width: 40px;
+}
+
+.my-package {
+    width: 25px;
+}
+
+.category-icon {
+    //margin-top: 5px;
+    font-size: 25px;
+}
+
+.menu_icon {
+    width: 60%;
+    height: 30px;
+    margin-top: -6px;
+}
+
+.menu_arrow_down_icon {
+    float: right;
+    margin-top: 6px;
+}
+
+.lavel-three-padding {
+    margin-bottom: -15px;
+}
+
+.col-class {
+    padding-bottom: 0px;
+    margin-bottom: -15px;
+}
+ion-menu {
+    --min-width: 100%;
+    .all-category-title {
+        color: black;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+

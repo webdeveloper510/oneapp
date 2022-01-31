@@ -1,0 +1,74 @@
+<app-header></app-header>
+<ion-content>
+  
+  <ion-grid class="mt-5">
+      <ion-row class="mt-3">
+        <ion-col size="4"></ion-col>
+        <ion-col size="4">
+          <ion-img [src]="party_icon_logo"></ion-img>
+        </ion-col>
+        <ion-col size="4"></ion-col>
+      </ion-row>
+
+      <ion-row class="app-logo-text-row mt-5">
+        <ion-col size="2"></ion-col>
+        <ion-col size="8">
+          <div class="ion-text-uppercase ion-text-center app-logo-text">
+            <div class="welcome-div">
+              <ion-text class="welcome-text" color="light"><b>welcome</b></ion-text>
+            </div>
+            <div class="size-of-font">
+              <ion-text color="light">to </ion-text>
+              <ion-text class="app-logo-first-text" color="light"><b>one</b></ion-text>
+              <ion-text color="light">app</ion-text>
+            </div>
+            
+          </div>
+        </ion-col>
+        <ion-col size="2"></ion-col>
+      </ion-row>
+
+      
+  </ion-grid>
+
+  <ion-grid class="sapce">
+    <ion-row >
+      <ion-col class="social-media ion-text-center" size="12">
+        <ion-button size="large" shape="round" color="light"  class="social-media-button ion-text-capitalize">
+          <ion-icon name="logo-twitter"></ion-icon>
+          <ion-text color="dark" class="social-media-text">
+            Import from Twitter
+          </ion-text>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row >
+      <ion-col class="social-media ion-text-center" size="12">
+        <ion-button size="large" shape="round" color="light"  class="social-media-button ion-text-capitalize">
+          <ion-icon name="logo-linkedin"></ion-icon>
+          <ion-text color="dark" class="social-media-text">
+            Import from Linkedin
+          </ion-text>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row >
+      <ion-col class="social-media ion-text-center" size="12">
+        <ion-button size="large" shape="round" color="light"  class="social-media-button ion-text-capitalize">
+          <ion-icon name="logo-instagram"></ion-icon>
+          <ion-text color="dark" class="social-media-text">
+            Import from Instagram
+          </ion-text>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12" class="ion-text-center manually-text">
+        <ion-text [routerLink]="['/upload-picture']">I will enter my info manually</ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

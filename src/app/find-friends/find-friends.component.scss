@@ -1,0 +1,22 @@
+ion-content {
+    --ion-background-color: #000000;
+
+    .find-friend-div{
+        font-size: 20px;
+        width: 80%;
+        margin: 5%;
+        height: 55px;
+        border-radius: 10px;
+        background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgba(139, 137, 137, 0.85));
+    }
+
+    .next-button {
+
+        ion-button{
+            width: 53%;
+            height: 47px;
+            
+        }
+    }
+
+}

@@ -1,0 +1,78 @@
+<ion-content>
+  
+  <ion-grid class="mt-3">
+ 
+    <app-logo></app-logo>
+
+    <ion-row>
+      <ion-col size=12>
+       
+          <ion-item>
+            <ion-input placeholder="Name" clearInput></ion-input>
+          </ion-item>
+          
+          <ion-item class="mt-2">
+            <ion-input type="email" placeholder="E-mail" clearInput></ion-input>
+          </ion-item>
+
+          <ion-item class="mt-2">
+            <ion-input type="password" placeholder="Password" clearInput ></ion-input>
+          </ion-item>
+
+          <ion-item class="mt-2">
+            <ion-input type="password" placeholder="Confirm Password" clearInput></ion-input>
+          </ion-item>
+        
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="mt-2">
+      <ion-col size="2"></ion-col>
+      <ion-col size="8">
+        <div class="text-size">
+          <div class="ion-float-left">
+            <ion-checkbox color="light" slot="start"></ion-checkbox>
+          </div>
+          <div class="ion-margin-left" >
+            <ion-text class="text-color ion-text-center terms_condition">I Accept the </ion-text>
+            <ion-text color="light">Terms & Conditions</ion-text>
+          </div>
+        </div>
+        <div class="ion-text-center mt-2">
+          <ion-button expand="block" 
+                      color="light" 
+                      class="signup-button ion-text-capitalize"
+                      [routerLink]="['/welcome']"
+                      >
+                      <ion-text color="dark">create new account</ion-text>
+          </ion-button>
+        </div>
+        
+        <div class=" mt-1">
+          <ion-text class="text-size text-color" >Already have an account? </ion-text>
+          <ion-text class="text-size ion-text-capitalize" 
+                    color="light"
+                    [routerLink]="['/login']"
+                    >
+                    login now
+          </ion-text>
+        </div>
+
+        <div class="ion-text-capitalize ion-text-center text-color text-size">
+          <div class="middle">or</div>
+          <div>register with</div>
+        </div>
+      </ion-col>
+      <ion-col size="2"></ion-col>
+    </ion-row>
+
+  </ion-grid>
+  <ion-grid>
+    <ion-row class="ion-text-center social-icon-div">
+      <ion-col size="3"><ion-icon name="logo-facebook" color="light" class="social-logo"></ion-icon></ion-col>
+      <ion-col size="3"><ion-icon name="logo-linkedin" color="light" class="social-logo"></ion-icon></ion-col>
+      <ion-col size="3"><ion-icon name="logo-google" color="light" class="social-logo"></ion-icon></ion-col>
+      <ion-col size="3"><ion-icon name="logo-twitter" color="light" class="social-logo"></ion-icon></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

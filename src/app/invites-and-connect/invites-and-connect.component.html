@@ -1,0 +1,37 @@
+<ion-content>
+  <div class="ion-margin-top search">
+    <ion-item class="ion-margin">
+      <ion-icon name="search"></ion-icon>
+      <ion-input  type="text"  
+                  autocomplete="off"
+                  placeholder="Room Number"
+                  > </ion-input>
+    </ion-item>
+  </div>
+
+  <ion-col size="12" class="ion-margin">
+    <ion-text class="light-white">
+      Invite people you want to stay tuned
+    </ion-text>
+    
+  </ion-col>
+
+  <ion-item class="list ion-margin" *ngFor="let item of list; let i = index;">
+    <ion-avatar slot="start">
+      <img [src]="avtar_profile">
+    </ion-avatar>
+    <ion-label class="ion-text-capitalize">
+      <ion-text color="light">{{ item.heading }}</ion-text>
+      <ion-label>
+        <ion-text class="sub-heading">{{ item.sub_heading }}</ion-text>
+      </ion-label>
+    </ion-label>
+
+    <ion-radio slot="end" value="biff" checked="true"></ion-radio>
+    
+  </ion-item>
+
+  
+  
+  
+</ion-content>
